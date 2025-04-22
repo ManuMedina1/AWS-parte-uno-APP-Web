@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fechas Importantes</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <h1>Lista de Fechas Importantes</h1>
+    <ul>
+        {% for nombre, fecha in fechas %}
+            <li><strong>{{ nombre }}</strong> - {{ fecha }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/agregar">Agregar nueva fecha</a>
+</body>
+</html>
