@@ -5,10 +5,10 @@ app = Flask(__name__)
 
 # Conectar a PostgreSQL en RDS
 db = psycopg2.connect(
-    host="tu-endpoint-rds.amazonaws.com",
-    user="admin",
-    password="tu_contraseña",
-    database="mi_base_de_datos"
+    host="database.cluster-cdru4ykthknh.us-east-1.rds.amazonaws.com",
+    user="manu",
+    password="12345678",
+    database="postgres"
 )
 
 @app.route("/")
